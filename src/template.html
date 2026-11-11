@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#26362b">
+  <meta name="description" content="منوی کافه رستوران ال ماسو لانژ؛ غذا، نوشیدنی و دسر در یک منوی ساده و واکنش‌گرا.">
+  <title>منوی ال ماسو لانژ | El Maso Lounge</title>
+  <link rel="preconnect" href="https://elmaso-lounge.com" crossorigin>
+  <style>
+    @font-face{font-family:Vazirmatn;src:url('assets/fonts/vazirmatn-arabic-400.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+    @font-face{font-family:Vazirmatn;src:url('assets/fonts/vazirmatn-arabic-600.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+    @font-face{font-family:Vazirmatn;src:url('assets/fonts/vazirmatn-arabic-700.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
+    :root{--ink:#26352c;--deep:#213128;--green:#304738;--muted:#81867d;--cream:#f8f7f2;--paper:#fffefa;--line:#e7e8de;--rust:#995236;--gold:#d6b781;--radius:18px;--container:1320px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:24px}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Vazirmatn,Tahoma,Arial,sans-serif;font-size:14px;line-height:1.8;-webkit-font-smoothing:antialiased}
+    a{color:inherit;text-decoration:none}button,input{font:inherit}button{cursor:pointer}img{display:block;max-width:100%}svg{display:block;flex-shrink:0}[hidden]{display:none!important}
+    :focus-visible{outline:3px solid #bf815e;outline-offset:4px}
+    .container{width:min(calc(100% - 64px),var(--container));margin-inline:auto}
+    .sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    .skip-link{position:fixed;z-index:50;top:8px;right:8px;padding:8px 16px;background:#fff;color:var(--deep);border-radius:8px;transform:translateY(-150%)}
+    .skip-link:focus{transform:translateY(0)}
+    .site-header{background:var(--cream)}
+    .header-inner{height:78px;display:flex;align-items:center;gap:48px}
+    .brand{display:inline-flex;align-items:center;gap:12px;flex-shrink:0}
+    .brand-mark{width:47px;height:47px;display:grid;place-items:center;border:1px solid #a3afa2;border-radius:50%;font:italic 25px/1 Georgia,serif;letter-spacing:-3px;padding-inline-end:3px;color:var(--green);direction:ltr}
+    .brand-text{display:flex;flex-direction:column;line-height:1.45}.brand-text strong{font-size:16px;letter-spacing:-.35px}.brand-text small{font:600 8px/1.5 Arial,sans-serif;letter-spacing:2.4px;color:#667466;direction:ltr}
+    .top-nav{display:flex;align-items:center;gap:34px;margin-inline-start:auto;color:#626f63;font-size:13px;font-weight:600}
+    .top-nav a{position:relative;padding-block:8px}.top-nav a:first-child{color:var(--ink)}.top-nav a:first-child::after{content:"";position:absolute;bottom:0;right:0;width:20px;height:2px;background:var(--rust)}
+    .top-nav a:hover{color:var(--rust)}
+    .phone-link{display:flex;align-items:center;gap:9px;padding:10px 15px;border:1px solid #dcded3;border-radius:100px;font-size:12px;white-space:nowrap;color:#425447;direction:ltr}
+    .phone-link:hover{border-color:#9bac9d;background:#fff}
+    .hero{position:relative;isolation:isolate;overflow:hidden;min-height:275px;display:grid;grid-template-columns:1fr 1fr;align-items:center;border-radius:20px;background:#26382d;color:#f7f4e9}
+    .hero::before{content:"";position:absolute;z-index:-1;inset:0;background:radial-gradient(circle at 22% 43%,rgba(156,175,132,.15),transparent 33%),linear-gradient(120deg,rgba(255,255,255,.025),transparent 40%)}
+    .hero::after{content:"";position:absolute;z-index:-1;inset:12px;border:1px solid rgba(242,231,207,.11);border-radius:13px;pointer-events:none}
+    .hero-copy{position:relative;z-index:2;padding:27px clamp(32px,5.4vw,74px) 28px 18px}
+    .eyebrow{display:flex;align-items:center;gap:10px;color:#c2cbb9;font-size:10px;font-weight:600;letter-spacing:.3px}.eyebrow::before{content:"";width:23px;height:1px;background:var(--gold)}
+    .hero h1{margin:11px 0 8px;font-size:clamp(30px,3.15vw,45px);font-weight:700;line-height:1.45;letter-spacing:-1.5px}.hero h1 span{color:#e4c79d}
+    .hero-copy p{max-width:500px;margin:0;color:#d1d8ca;font-size:13px;line-height:2}
+    .hero-actions{display:flex;align-items:center;gap:18px;margin-top:17px}.hero-button{display:inline-flex;align-items:center;gap:20px;min-height:46px;padding:9px 17px;background:#f0e9d9;color:var(--deep);border-radius:8px;font-weight:700;font-size:12px;transition:background .2s,transform .2s}.hero-button:hover{background:#fff;transform:translateY(-2px)}
+    .hero-hint{font-size:10px;color:#bec9b9;white-space:nowrap}
+    .hero-art{position:relative;height:100%;min-height:275px;direction:ltr}
+    .hero-arc{position:absolute;width:265px;height:265px;left:24%;top:50%;transform:translate(-10%,-50%);border:1px solid rgba(221,212,186,.25);border-radius:50%}
+    .hero-arc::before,.hero-arc::after{content:"";position:absolute;border:1px solid rgba(221,212,186,.12);border-radius:50%;inset:-18px}.hero-arc::after{inset:17px}
+    .hero-photo{position:absolute;overflow:hidden;background:#1b261f;border-radius:50%;box-shadow:0 15px 38px rgba(5,15,10,.2)}
+    .hero-photo img{width:100%;height:100%;object-fit:cover}.hero-photo-main{width:215px;height:215px;left:27%;top:30px;border:5px solid rgba(235,226,202,.13)}
+    .hero-photo-small{width:120px;height:120px;left:13%;bottom:24px;border:5px solid #c8b89c}
+    .hero-stamp{position:absolute;left:62%;top:62px;width:82px;height:82px;display:grid;place-items:center;border:1px solid rgba(232,222,192,.42);border-radius:50%;text-align:center;color:#d2c7aa;font:10px/1.5 Georgia,serif;letter-spacing:1px;transform:rotate(12deg)}
+    .hero-stamp b{display:block;font-size:18px;font-weight:400;line-height:1}
+    .hero-script{position:absolute;left:62%;bottom:47px;color:rgba(244,237,218,.65);font:italic 16px/1.2 Georgia,serif;letter-spacing:.3px;transform:rotate(-5deg)}
+    .hero-spark{position:absolute;color:#e2c99f;font:30px/1 Georgia,serif;left:16%;top:46px}
+    .menu-area{padding-top:38px;padding-bottom:78px}
+    .menu-intro{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:17px}
+    .kicker{display:flex;align-items:center;gap:8px;margin:0 0 6px;color:var(--rust);font:700 10px/1.4 Arial,sans-serif;letter-spacing:2px;direction:ltr;justify-content:flex-end}
+    .kicker::before{content:"";width:20px;height:1px;background:var(--rust)}
+    .menu-intro h2{margin:0;font-size:26px;line-height:1.5;letter-spacing:-.8px}.menu-intro p:not(.kicker){margin:4px 0 0;color:#657364;font-size:12px}
+    .search-wrap{position:relative;display:flex;align-items:center;width:min(345px,100%);flex-shrink:0}
+    .search-icon{position:absolute;right:17px;color:#8d9689;pointer-events:none}
+    .search-wrap input{width:100%;height:50px;padding:0 45px 0 47px;border:1px solid #e0e4d9;border-radius:10px;background:#fffefa;color:var(--ink);outline:0;transition:border-color .2s,box-shadow .2s}
+    .search-wrap input::-webkit-search-cancel-button{-webkit-appearance:none}.search-wrap input::placeholder{color:#738075}.search-wrap input:focus{border-color:#aebbad;box-shadow:0 0 0 3px rgba(113,141,114,.12)}
+    .search-clear{position:absolute;left:9px;width:32px;height:32px;display:grid;place-items:center;border:0;border-radius:50%;background:#f0f1eb;color:#657368}.search-clear:hover{background:#e3e7dd}
+    .category-bar{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:9px;padding:11px 0 12px;border-block:1px solid var(--line);background:var(--cream)}
+    .category-scroll{display:flex;align-items:center;gap:9px;overflow:auto;min-width:0;flex:1;scrollbar-width:none;scroll-snap-type:x proximity;overscroll-behavior-inline:contain}.category-scroll::-webkit-scrollbar{display:none}
+    .category-link{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex-shrink:0;scroll-snap-align:start;min-height:43px;padding:9px 17px;border:1px solid #e3e6dc;border-radius:8px;color:#677268;background:var(--paper);font-size:12px;font-weight:600;white-space:nowrap;transition:color .2s,background .2s,border-color .2s}
+    .category-link:hover{border-color:#aab8a8;color:var(--green)}.category-link.is-active{border-color:var(--green);background:var(--green);color:#fff}
+    .category-link .all-icon{width:15px;height:15px}.category-arrow{width:34px;height:34px;display:grid;place-items:center;flex-shrink:0;border:1px solid #e0e5da;border-radius:50%;background:transparent;color:#778576}.category-arrow:hover{background:white;border-color:#b8c3b3}
+    .menu-meta{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:17px;color:#657364;font-size:11px}.menu-meta strong{color:#55675a;font-weight:600}.menu-meta .meta-rule{flex:1;height:1px;background:#e8e9e0;margin-inline:10px}
+    .menu-section{padding-top:28px;scroll-margin-top:90px}
+    .section-heading{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+    .section-title-wrap{display:flex;align-items:center;gap:13px}.section-number{width:37px;height:37px;display:grid;place-items:center;border:1px solid #dedfd5;border-radius:50%;color:#657364;font:11px/1 Arial,sans-serif;direction:ltr}
+    .section-heading h3{margin:0;font-size:20px;line-height:1.45;letter-spacing:-.4px}.section-en{display:block;margin-top:2px;color:#657364;font:700 8px/1.2 Arial,sans-serif;letter-spacing:1.6px;direction:ltr;text-align:right}.section-count{color:#657364;font-size:11px;white-space:nowrap}
+    .card-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:19px}
+    .menu-card{display:flex;min-width:0;flex-direction:column;overflow:hidden;border:1px solid #edeee7;border-radius:var(--radius);background:var(--paper);box-shadow:0 5px 20px rgba(42,53,40,.025);transition:box-shadow .25s,transform .25s,border-color .25s}
+    .menu-card:hover{transform:translateY(-4px);border-color:#dce3d7;box-shadow:0 13px 28px rgba(42,53,40,.09)}
+    .card-image{position:relative;overflow:hidden;aspect-ratio:1.48;background:#e9e9df}
+    .image-fallback{position:absolute;inset:0;display:grid;place-content:center;text-align:center;background:linear-gradient(135deg,#e8ebe2,#d7ded1);color:#839486;font:italic 24px/1.2 Georgia,serif;letter-spacing:.5px}.image-fallback small{margin-top:7px;font:8px/1 Arial,sans-serif;letter-spacing:2px}
+    .card-image img{position:relative;width:100%;height:100%;object-fit:cover;transition:transform .45s}.menu-card:hover .card-image img{transform:scale(1.045)}
+    .card-chip{position:absolute;z-index:1;top:12px;right:12px;padding:5px 10px;border-radius:6px;background:rgba(255,254,250,.92);color:#526558;font-size:10px;font-weight:600;line-height:1.6}
+    .card-body{display:flex;flex:1;flex-direction:column;padding:17px 17px 15px}.card-title{min-height:29px;margin:0;color:#28382d;font-size:15px;font-weight:700;line-height:1.8;letter-spacing:-.3px}
+    .card-description{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:2;min-height:44px;margin:7px 0 16px;color:#647263;font-size:12px;line-height:1.9;white-space:pre-line;overflow-wrap:anywhere}
+    .card-bottom{display:flex;align-items:end;justify-content:space-between;gap:8px;margin-top:auto;padding-top:13px;border-top:1px solid #f0f1ea}
+    .price-wrap{display:flex;flex-wrap:wrap;align-items:baseline;gap:4px;min-width:0;color:var(--rust)}.price{font-size:16px;font-weight:700;line-height:1.6;white-space:nowrap}.currency{font-size:10px;font-weight:400;color:#657364}.old-price{flex-basis:100%;color:#687568;font-size:10px;line-height:1.1;text-decoration:line-through}
+    .card-more{display:flex;align-items:center;gap:7px;padding:0;border:0;background:transparent;color:#607563;font-size:10px;font-weight:600;white-space:nowrap}.card-more-icon{width:31px;height:31px;display:grid;place-items:center;border:1px solid #e1e7dc;border-radius:50%;transition:background .2s,color .2s,border-color .2s}.card-more:hover .card-more-icon{background:var(--green);color:#fff;border-color:var(--green)}
+    .section-note{margin:0 0 18px;padding:14px 18px;border:1px solid #e4e8de;border-radius:12px;background:#f0f2e9;color:#586b59;font-size:12px}.section-note summary{cursor:pointer;font-weight:700;color:#435a47}.section-note ul{padding-right:20px;margin:10px 0 0}.section-note li+li{margin-top:6px}
+    .empty-state{padding:72px 20px;text-align:center;border:1px dashed #d5ddcf;border-radius:16px;margin-top:35px;background:#fafbf7}.empty-state svg{margin:0 auto 15px;color:#aebbac}.empty-state h3{margin:0;font-size:17px}.empty-state p{margin:6px 0 17px;color:#8a9487;font-size:12px}.empty-reset{padding:9px 16px;border:1px solid #c9d3c5;border-radius:8px;background:#fff;color:#405a46;font-size:12px;font-weight:600}
+    .site-footer{background:#26382d;color:#e9ede2}.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-block:32px}.footer-brand{display:flex;align-items:center;gap:12px}.footer-brand .brand-mark{border-color:#849587;color:#e8e7d8}.footer-brand strong{display:block;font-size:14px}.footer-brand small{color:#adbbae;font-size:10px}.footer-info{text-align:left;color:#b8c4b7;font-size:11px}.footer-info a{color:#e7d1ab;text-decoration:underline;text-underline-offset:3px}.footer-info a:hover{text-decoration:underline}
+    dialog{width:min(620px,calc(100% - 32px));max-height:min(85vh,720px);padding:0;overflow:auto;border:0;border-radius:19px;background:var(--paper);color:var(--ink);box-shadow:0 25px 90px rgba(14,27,18,.3)}dialog::backdrop{background:rgba(15,27,20,.65);backdrop-filter:blur(3px)}
+    .dialog-inner{display:grid;grid-template-columns:200px 1fr;direction:rtl}.dialog-image{position:relative;min-height:240px;background:#e5e8df}.dialog-image img{position:relative;width:100%;height:100%;min-height:240px;object-fit:cover}.dialog-copy{padding:30px 26px 27px}.dialog-close{position:absolute;top:12px;left:12px;z-index:2;width:34px;height:34px;display:grid;place-items:center;border:1px solid #e4e9df;border-radius:50%;background:#fff;color:#405548}.dialog-category{color:var(--rust);font-size:11px}.dialog-copy h2{margin:6px 0 9px;font-size:21px;line-height:1.6}.dialog-description{color:#69776a;font-size:12px;line-height:2.15;white-space:pre-line;overflow-wrap:anywhere}.dialog-price{display:flex;align-items:baseline;gap:5px;margin-top:18px;padding-top:15px;border-top:1px solid #e9ece4;color:var(--rust);font-size:18px;font-weight:700}.dialog-price small{color:#788579;font-size:11px;font-weight:400}
+    @media(max-width:1100px){.card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.header-inner{gap:28px}.top-nav{gap:23px}.hero-photo-main{left:27%}.hero-stamp,.hero-script{left:69%}}
+    @media(max-width:760px){.container{width:min(calc(100% - 36px),var(--container))}.header-inner{height:72px;gap:12px;justify-content:space-between}.brand-mark{width:42px;height:42px;font-size:23px}.brand-text strong{font-size:14px}.brand-text small{font-size:7px}.top-nav{display:none}.phone-link{padding:8px 11px;font-size:11px}.hero{min-height:280px;grid-template-columns:1fr}.hero-copy{width:67%;padding:34px 28px 35px 0}.hero h1{font-size:clamp(29px,5vw,38px);letter-spacing:-1px}.hero-copy p{font-size:12px}.hero-art{position:absolute;inset:0 auto 0 0;width:40%;min-height:0}.hero-photo-main{width:clamp(150px,26vw,190px);height:clamp(150px,26vw,190px);left:8%;top:44px}.hero-photo-small{width:103px;height:103px;left:0;bottom:27px}.hero-arc{width:clamp(170px,30vw,220px);height:clamp(170px,30vw,220px);left:0;top:50%}.hero-stamp{width:60px;height:60px;left:auto;right:8px;top:30px;font-size:8px}.hero-stamp b{font-size:14px}.hero-script{left:auto;right:8px;bottom:36px;font-size:13px}.hero-spark{left:0;top:36px;font-size:23px}.menu-area{padding-top:38px}.menu-intro h2{font-size:23px}.search-wrap{width:275px}.category-arrow{display:none}.category-scroll{padding-bottom:2px}}
+    @media(max-width:560px){.hero{min-height:265px}.hero-copy{width:66%;padding:28px 20px 30px 0}.hero h1{font-size:28px;line-height:1.5}.hero h1 span{display:block}.hero-copy p{font-size:11px;line-height:2}.hero-hint{display:none}.hero-actions{margin-top:17px}.hero-button{min-height:42px;padding:8px 12px;gap:11px}.hero-art{width:34%}.hero-photo-main{width:clamp(112px,31vw,165px);height:clamp(112px,31vw,165px);left:-5px;top:65px}.hero-photo-small{width:clamp(65px,20vw,85px);height:clamp(65px,20vw,85px);left:-10px;bottom:27px;border-width:4px}.hero-arc{width:clamp(140px,36vw,190px);height:clamp(140px,36vw,190px);left:-20px}.hero-stamp,.hero-script,.hero-spark{display:none}.menu-intro{align-items:stretch;flex-direction:column;gap:17px}.search-wrap{width:100%}.menu-intro h2{font-size:22px}.menu-area{padding-top:34px}.menu-meta{margin-top:18px}.menu-section{padding-top:31px}.card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.section-heading h3{font-size:18px}.section-number{width:32px;height:32px}.card-body{padding:12px 12px 13px}.card-title{font-size:13px}.card-image{aspect-ratio:1.26}.card-description{font-size:11px;min-height:42px;margin:5px 0 13px}.price{font-size:14px}.currency{font-size:9px}.card-more{gap:4px}.card-more-icon{width:28px;height:28px}.card-chip{top:9px;right:9px;font-size:9px;padding:4px 8px}.footer-inner{align-items:flex-start;flex-direction:column;gap:18px}.footer-info{text-align:right}.dialog-inner{display:block}.dialog-image,.dialog-image img{height:190px;min-height:190px}.dialog-copy{padding:21px}.dialog-close{background:#fff}}
+    @media(max-width:380px){.container{width:calc(100% - 28px)}.phone-link span{display:none}.phone-link{width:39px;height:39px;justify-content:center;padding:0}.hero h1{font-size:25px}.hero-copy{width:70%;padding-right:19px}.hero-photo-main{width:95px;height:95px;left:-10px;top:77px}.hero-photo-small{width:70px;height:70px}.hero-arc{width:130px;height:130px;left:-30px}.card-more-label{display:none}.card-body{padding:11px}.card-bottom{gap:4px}.price{font-size:13px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+  </style>
+  <noscript><style>.card-description{display:block;min-height:0;overflow:visible;-webkit-line-clamp:unset}.card-more{display:none}</style></noscript>
+  <script>
+    // Local copies of selected original photographs keep the first screen fast;
+    // if they are not present, fall back to the original website image.
+    document.addEventListener('error', function (event) {
+      var image = event.target;
+      if (!(image instanceof HTMLImageElement)) return;
+      if (image.dataset.original && !image.dataset.triedOriginal) {
+        image.dataset.triedOriginal = '1';
+        image.src = image.dataset.original;
+      } else {
+        image.hidden = true;
+      }
+    }, true);
+  </script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#menu">رفتن به منو</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true">em</span>
+        <span class="brand-text"><strong>ال ماسو لانژ</strong><small>EL MASO LOUNGE</small></span>
+      </a>
+      <nav class="top-nav" aria-label="پیوندهای اصلی">
+        <a href="#menu">منوی ما</a><a href="#categories">دسته‌بندی‌ها</a><a href="https://elmaso-lounge.com/contact/" target="_blank" rel="noopener noreferrer">تماس با ما</a>
+      </nav>
+      <a class="phone-link" href="tel:02175078750" aria-label="تماس با ال ماسو: ۰۲۱ ۷۵۰۷۸۷۵۰">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7l.3 2.5a2 2 0 0 1-.6 1.7L8.5 10a16 16 0 0 0 5.5 5.5l1.1-1.3a2 2 0 0 1 1.7-.6l2.5.3a2 2 0 0 1 1.7 2Z"/></svg>
+        <span>۰۲۱ ۷۵۰۷۸۷۵۰</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <div class="eyebrow">به ال ماسو لانژ خوش اومدید</div>
+          <h1 id="hero-title">یه طعم خوب، <span>یه حالِ خوب.</span></h1>
+          <p>از پیش‌غذاهای دلچسب تا نوشیدنی‌های خوش‌عطر؛<br>اینجا برای هر سلیقه‌ای یه انتخاب خوشمزه هست.</p>
+          <div class="hero-actions">
+            <a class="hero-button" href="#menu">منو رو ببین
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 4v15m-6-6 6 6 6-6"/></svg>
+            </a>
+            <span class="hero-hint">{{CATEGORY_COUNT}} دسته‌بندی، کلی انتخاب دل‌چسب</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="hero-arc"></div><div class="hero-spark">✳</div>
+          <div class="hero-photo hero-photo-main"><img src="assets/images/pizza-special.jpg" data-original="https://elmaso-lounge.com/wp-content/uploads/2023/06/%D9%BE%DB%8C%D8%AA%D8%B2%D8%A7-%D9%85%D8%AE%D8%B5%D9%88%D8%B5-%D8%A7%D9%84-%D9%85%D8%A7%D8%B3%D9%88-250x250.jpg" alt="" width="250" height="250" fetchpriority="high"></div>
+          <div class="hero-photo hero-photo-small"><img src="assets/images/wings.jpg" data-original="https://elmaso-lounge.com/wp-content/uploads/2023/06/fa240535-783d-46a7-b555-f0809b6267c1-250x250.jpg" alt="" width="250" height="250"></div>
+          <div class="hero-stamp">EL MASO<b>✳</b>LOUNGE</div><div class="hero-script">good food,<br>good mood.</div>
+        </div>
+      </section>
+
+      <section class="menu-area" id="menu" aria-labelledby="menu-title">
+        <div class="menu-intro">
+          <div><p class="kicker">EXPLORE OUR MENU</p><h2 id="menu-title">امروز چی میل دارید؟</h2><p>از بین طعم‌های دوست‌داشتنی منو، انتخاب کنید.</p></div>
+          <div class="search-wrap">
+            <label class="sr-only" for="menu-search">جست‌وجو در منو</label>
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+            <input id="menu-search" type="search" placeholder="جست‌وجو در منو..." autocomplete="off" aria-controls="menu-sections">
+            <button class="search-clear" type="button" aria-label="پاک کردن جست‌وجو" hidden><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+          </div>
+        </div>
+        <nav class="category-bar" id="categories" aria-label="دسته‌بندی‌های منو">
+          <button class="category-arrow" type="button" data-scroll="previous" aria-label="دسته‌بندی‌های قبلی"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+          <div class="category-scroll">
+            <a class="category-link is-active" href="#menu" data-filter="all" aria-current="true"><svg class="all-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>همه منو</a>
+            {{CATEGORY_NAV}}
+          </div>
+          <button class="category-arrow" type="button" data-scroll="next" aria-label="دسته‌بندی‌های بعدی"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+        </nav>
+        <div class="menu-meta"><span id="result-status" role="status" aria-live="polite">نمایش <strong>{{ITEM_COUNT}}</strong> آیتم از منو</span><span class="meta-rule" aria-hidden="true"></span><span>قیمت‌ها به تومان</span></div>
+        <noscript><p class="section-note">برای جست‌وجو و نمایش جزئیات، جاوااسکریپت را فعال کنید. همه آیتم‌ها در ادامه قابل مشاهده‌اند.</p></noscript>
+        <div id="menu-sections">
+          {{SECTIONS}}
+        </div>
+        <div class="empty-state" hidden>
+          <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5M8.5 10.5h4"/></svg>
+          <h3>چیزی پیدا نشد!</h3><p>نام دیگری را جست‌وجو کنید یا همه دسته‌ها را ببینید.</p><button class="empty-reset" type="button">نمایش همه منو</button>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><span class="brand-mark" aria-hidden="true">em</span><div><strong>ال ماسو لانژ</strong><small>برای لحظه‌های خوش‌طعم شما</small></div></div>
+      <div class="footer-info">متن، تصاویر و قیمت‌ها از <a href="https://elmaso-lounge.com/menu/" target="_blank" rel="noopener noreferrer">منوی اصلی ال ماسو</a> گرفته شده‌اند.<br>قیمت‌ها مربوط به زمان تهیه این صفحه‌اند و ممکن است تغییر کنند.</div>
+    </div>
+  </footer>
+
+  <dialog id="product-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="بستن جزئیات"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <div class="dialog-inner"><div class="dialog-image"><div class="image-fallback" aria-hidden="true">el maso<small>LOUNGE MENU</small></div><img id="dialog-image" alt="" width="250" height="250"></div><div class="dialog-copy"><span class="dialog-category"></span><h2 id="dialog-title"></h2><p class="dialog-description"></p><div class="dialog-price"><span></span><small>تومان</small></div></div></div>
+  </dialog>
+  <script>
+    (function () {
+      'use strict';
+      const sections = Array.from(document.querySelectorAll('.menu-section'));
+      const links = Array.from(document.querySelectorAll('[data-filter]'));
+      const search = document.getElementById('menu-search');
+      const clear = document.querySelector('.search-clear');
+      const status = document.getElementById('result-status');
+      const empty = document.querySelector('.empty-state');
+      const scroller = document.querySelector('.category-scroll');
+      const dialog = document.getElementById('product-dialog');
+      const toFa = n => new Intl.NumberFormat('fa-IR').format(n);
+      const normalize = text => text.normalize('NFKC').toLowerCase().replace(/[يى]/g, 'ی').replace(/ك/g, 'ک').replace(/[\u064b-\u065f\u0670٬,]/g, '').replace(/[\u200c\u200d\s]+/g, ' ').replace(/[۰-۹]/g, d => '۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g, d => '٠١٢٣٤٥٦٧٨٩'.indexOf(d)).trim();
+      let selected = 'all';
+      const knownIds = new Set(sections.map(section => section.id));
+      function currentHash() {
+        let hash = location.hash.slice(1);
+        try { hash = decodeURIComponent(hash); } catch (_) { /* Ignore malformed fragments. */ }
+        return hash;
+      }
+      if (knownIds.has(currentHash())) selected = currentHash();
+
+      function updateMenu() {
+        const query = normalize(search.value);
+        let total = 0;
+        sections.forEach(section => {
+          let visible = 0;
+          const inCategory = selected === 'all' || section.id === selected;
+          section.querySelectorAll('.menu-card').forEach(card => {
+            const matches = inCategory && (!query || normalize(card.textContent + ' ' + section.dataset.title).includes(query));
+            card.hidden = !matches;
+            if (matches) visible++;
+          });
+          section.hidden = visible === 0;
+          section.querySelector('.section-count').textContent = toFa(visible) + ' آیتم';
+          total += visible;
+        });
+        links.forEach(link => {
+          const active = link.dataset.filter === selected;
+          link.classList.toggle('is-active', active);
+          if (active) link.setAttribute('aria-current', 'true'); else link.removeAttribute('aria-current');
+        });
+        clear.hidden = !search.value;
+        empty.hidden = total !== 0;
+        status.textContent = 'نمایش ' + toFa(total) + ' آیتم از منو';
+      }
+      function revealActiveFilter() {
+        const active = links.find(link => link.dataset.filter === selected);
+        const view = scroller.getBoundingClientRect();
+        const item = active.getBoundingClientRect();
+        if (item.left < view.left) scroller.scrollBy({left: item.left - view.left - 10, behavior: 'auto'});
+        else if (item.right > view.right) scroller.scrollBy({left: item.right - view.right + 10, behavior: 'auto'});
+      }
+      window.addEventListener('hashchange', () => {
+        const hash = currentHash();
+        if (knownIds.has(hash)) selected = hash;
+        else if (hash === 'menu' || hash === '') selected = 'all';
+        else return;
+        updateMenu();
+        revealActiveFilter();
+      });
+      links.forEach(link => link.addEventListener('click', event => {
+        event.preventDefault();
+        selected = link.dataset.filter;
+        updateMenu();
+        revealActiveFilter();
+        const hash = selected === 'all' ? '#menu' : '#' + selected;
+        history.replaceState(null, '', hash);
+        // Keep the category controls in view when selecting a filter.
+        document.getElementById('menu').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start'});
+      }));
+      search.addEventListener('input', updateMenu);
+      clear.addEventListener('click', () => { search.value = ''; updateMenu(); search.focus(); });
+      document.querySelector('.empty-reset').addEventListener('click', () => {
+        selected = 'all'; search.value = ''; history.replaceState(null, '', '#menu'); updateMenu(); revealActiveFilter(); search.focus();
+      });
+      document.querySelectorAll('[data-scroll]').forEach(button => button.addEventListener('click', () => {
+        scroller.scrollBy({left: button.dataset.scroll === 'next' ? -260 : 260, behavior: 'smooth'});
+      }));
+      document.getElementById('menu-sections').addEventListener('click', event => {
+        const button = event.target.closest('.card-more');
+        if (!button) return;
+        const card = button.closest('.menu-card');
+        const image = card.querySelector('img');
+        const dialogImage = document.getElementById('dialog-image');
+        dialog.querySelector('#dialog-title').textContent = card.querySelector('.card-title').textContent;
+        dialog.querySelector('.dialog-category').textContent = card.closest('.menu-section').dataset.title;
+        dialog.querySelector('.dialog-description').textContent = card.querySelector('.card-description').textContent || 'توضیحی برای این آیتم در منوی اصلی ثبت نشده است.';
+        dialog.querySelector('.dialog-price span').textContent = card.querySelector('.price').textContent;
+        dialogImage.hidden = false;
+        delete dialogImage.dataset.triedOriginal;
+        dialogImage.dataset.original = image.dataset.original || '';
+        dialogImage.alt = image.alt;
+        dialogImage.src = image.currentSrc || image.src;
+        if (typeof dialog.showModal === 'function') dialog.showModal();
+        else dialog.setAttribute('open', '');
+      });
+      function closeDialog() {
+        if (typeof dialog.close === 'function') dialog.close(); else dialog.removeAttribute('open');
+      }
+      dialog.querySelector('.dialog-close').addEventListener('click', closeDialog);
+      dialog.addEventListener('click', event => { if (event.target === dialog) closeDialog(); });
+      updateMenu();
+      revealActiveFilter();
+    }());
+  </script>
+</body>
+</html>
